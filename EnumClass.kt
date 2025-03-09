@@ -1,5 +1,4 @@
-
-enum class Color(val number:Int){
+enum class Color(val number: Int) {
     RED(1),
     BLUE(2),
     GREEN(3); // 세미콜론 추가하여 함수도 추가 가능
@@ -14,6 +13,7 @@ enum class State(val message: String) {
 
     fun isSleeping() = this == State.SLEEP
 }
+
 fun main() {
     var state = State.SING
     println(state) // toString 호출
@@ -21,7 +21,6 @@ fun main() {
 
     state = State.SLEEP
     println(state.isSleeping())
-
 
 
 }
